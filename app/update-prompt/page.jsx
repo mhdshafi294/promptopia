@@ -5,8 +5,12 @@ import { useRouter, useSearchParams } from "next/navigation";
 
 import Form from "@components/Form";
 
+// ! In my opinion there is a huge security problem here, any user can update the post if they reach the url,
+// todo: A condition should be added to check if the session.id === post.creator._id., other wise the page should not be appear.
+
 const EditPrompt = () => {
   const router = useRouter();
+
   const searchParams = useSearchParams();
   const promptId = searchParams.get("id");
 

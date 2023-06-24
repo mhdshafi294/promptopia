@@ -59,3 +59,5 @@ const MyProfile = () => {
 };
 
 export default MyProfile;
+
+// You are a professional web developer. I'm going to give you a snippet of code, and I would appreciate it if you give me some advice on how to make it cleaner, more readable, and more efficient.
